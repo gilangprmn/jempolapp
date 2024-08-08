@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="stylesheet" href="/styl.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>login</h2>
+        <form action="/login" method="post">
+                <div class="form-group">
+                    <label for="email">email:</label>
+                    <input type="text" id="email" name="email" placeholder="enter your email" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password" placeholder="enter your password" required>
+                </div>
+                <button type="submit" class="submit-btn">login</button>
+                <p><a href="/Register">Register</a></p>
+                <p>forget password?<a href="/password">password</a></p>
+                <p>ke halaman dashboard <a href="/dasboard">dashboard</a></p>
+                <p>change password?<a href="/change_password">change password</a></p>
+        </form>
+    </div>
+</body>
+</html>

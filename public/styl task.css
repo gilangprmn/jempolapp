@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.sidebar {
+    position: fixed;
+    left: -270px;
+    top: 0;
+    bottom: 0;
+    width: 270px;
+    background-color: #fff;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.backButton {
+    margin-bottom: 20px;
+}
+
+.sidebarLink {
+    text-decoration: none;
+}
+
+.sidebarItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #E3F2FD;
+    color: black;
+}
+
+.activeSidebarItem {
+    background-color: #61C0F4;
+}
+
+.sidebarText {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-content {
+    margin-left: 270px;
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    transition: margin-left 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0f7ff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.userInfo {
+    text-align: center;
+}
+
+.userName {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.userRole {
+    font-size: 14px;
+    color: gray;
+}
+
+.profileIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.resetInfoContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.resetInfo {
+    font-size: 14px;
+    color: #6c757d;
+    margin-left: 10px;
+}
+
+.taskSection {
+    margin-top: 20px;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.taskCard {
+    background-color: #a4d4ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskTitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.taskSubtitle {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.iconContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.addButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #d9e7fb;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

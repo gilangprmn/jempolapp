@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rewards</title>
+  <link rel="stylesheet" href="styl reward.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <button class="close-button" onclick="toggleSidebar()">&#x2190;</button>
+      <div class="sidebar-item">
+        <i class="material-icons">home</i>
+        <a href="/dasboard">Dashboard</a>
+      </div>
+      <div class="sidebar-item">
+        <i class="material-icons">check_box</i>
+        <a href="/task">Task</a>
+      </div>
+      <div class="sidebar-item active">
+        <i class="material-icons">emoji_events</i>
+        <a href="/rewards">Rewards</a>
+      </div>
+      <div class="sidebar-item">
+        <i class="material-icons">person</i>
+        <a href="/profile">Profile</a>
+      </div>
+    </div>
+    <div class="main-content">
+      <header>
+        <button class="menu-button" onclick="toggleSidebar()">&#x2630;</button>
+        <div class="user-info">
+          <span class="user-name">Nama User</span>
+          <span class="user-role">Orang Tua</span>
+        </div>
+        <div class="user-avatar"></div>
+      </header>
+      <div class="rewards-header">
+        <h2>REWARDS</h2>
+        <button class="edit-button" onclick="toggleModal()">&#x2710;</button>
+        <button class="add-button" onclick="toggleModal()">&#x2795;</button>
+      </div>
+      <div class="filter-container">
+        <span class="filter active">Semua</span>
+        <span class="filter">Mainan</span>
+        <span class="filter">Pakaian</span>
+        <span class="filter">Voucher</span>
+      </div>
+      <div class="rewards-container">
+        <!-- Rewards list will go here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Adding Reward -->
+  <div class="modal" id="rewardModal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal()">&times;</span>
+      <h3>Tambah Reward</h3>
+      <input type="text" placeholder="Nama Reward">
+      <input type="number" placeholder="Harga (Jempol)">
+      <input type="number" placeholder="Limit Redeem">
+      <textarea placeholder="Deskripsi Reward"></textarea>
+      <button onclick="saveReward()">Simpan</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

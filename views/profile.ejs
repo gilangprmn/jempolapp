@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 16px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 52px;
+      background-color: #61C0F4;
+      padding: 16px;
+    }
+    .header-text {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .profile-container, .info-container, .additional-info-container, .family-section, .pending-request {
+      background-color: #d9e7fb;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    .profile-picture, .circle-button {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #d9e7fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+    .profile-name, .profile-role {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    .info-row, .family-member {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .button {
+      background-color: #e6d4f4;
+      padding: 8px;
+      border-radius: 8px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .request-buttons {
+      display: flex;
+    }
+    .request-buttons .button {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <button onclick="toggleSidebar()">
+        <i class="ionicons menu">&#9776;</i>
+    </button>
+    <span class="header-text">PROFILE</span>
+  </div>
+  <div class="profile-container">
+    <div class="profile-picture">
+      <span>FOTO PROFILE</span>
+    </div>
+    <div class="profile-name">Nama User</div>
+    <div class="profile-role">Role User</div>
+  </div>
+  <div class="info-container">
+    <div class="info-row">
+      <span>Nama: Nama User</span>
+      <div class="button">Change Name</div>
+    </div>
+    <div class="info-row">
+      <span>Password: ********</span>
+      <div class="button">Change Password</div>
+    </div>
+  </div>
+  <div class="additional-info-container">
+    <span>Email: user@email.com</span><br>
+    <span>Phone: +62 123-456-7890</span><br>
+    <span>Tanggal Lahir: 01/01/2000</span><br>
+    <span>Pekerjaan:</span><br>
+    <span>Hobi:</span><br>
+    <div class="button" onclick="showModal()">Edit Profile</div>
+  </div>
+  <div class="family-section">
+    <div class="section-title">FAMILY MEMBERS</div>
+    <span>TOKEN: 1a2b3c</span>
+    <div class="family-member">
+      <div class="circle-button"></div>
+      <div>
+        <span>Nama User</span><br>
+        <span>Role User</span>
+      </div>
+      <div class="button">Sync</div>
+    </div>
+    <div class="family-member">
+      <div class="circle-button"></div>
+      <div>
+        <span>Nama User</span><br>
+        <span>Role User</span>
+      </div>
+      <div class="button">Sync</div>
+    </div>
+    <div class="section-title">PENDING REQUEST</div>
+    <div class="pending-request">
+      <div class="circle-button"></div>
+      <div>
+        <span>Nama User</span><br>
+        <span>Role User</span>
+      </div>
+      <div class="request-buttons">
+        <div class="button">Approve</div>
+        <div class="button">Reject</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Edit Profile -->
+  <div id="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center;">
+    <div style="background-color: #fff; padding: 20px; border-radius: 8px; width: 80%; max-width: 400px;">
+      <h2>Edit Profile</h2>
+      <input type="text" placeholder="Email" style="width: 100%; padding: 8px; margin-bottom: 8px;">
+      <input type="text" placeholder="Tanggal Lahir" style="width: 100%; padding: 8px; margin-bottom: 8px;">
+      <input type="text" placeholder="No. Telpon" style="width: 100%; padding: 8px; margin-bottom: 8px;">
+      <input type="text" placeholder="Pekerjaan" style="width: 100%; padding: 8px; margin-bottom: 8px;">
+      <input type="text" placeholder="Hobi" style="width: 100%; padding: 8px; margin-bottom: 8px;">
+      <button onclick="closeModal()" style="background-color: #61C0F4; padding: 10px; border: none; color: white; width: 100%; border-radius: 4px;">Save</button>
+    </div>
+  </div>
+
+  <script>
+    function showModal() {
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

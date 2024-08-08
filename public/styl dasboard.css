@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 75%;
+    background-color: #fff;
+    padding: 40px 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.backButton {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-size: 35px;
+}
+
+.sidebarItem {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: #E3F2FD;
+}
+
+.activeSidebarItem {
+    background-color: #BBDEFB;
+}
+
+.sidebarText {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.main-content {
+    flex: 1;
+    padding: 28px 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 18px;
+    background-color: #e0f7ff;
+}
+
+.userInfo {
+    text-align: center;
+}
+
+.userName {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.userRole {
+    font-size: 14px;
+    color: gray;
+}
+
+.profileIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.dashboardTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0 10px;
+}
+
+.taskSection {
+    background-color: #e0f7ff;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.addButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.taskItem {
+    background-color: #d1c4e9;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px 0;
+}
+
+.taskTitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.taskDescription {
+    font-size: 14px;
+    color: #666;
+}

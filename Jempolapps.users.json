@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "66a769ca50b575d2147302ad"
+  },
+  "name": "ada",
+  "password": "aku",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a76b5a170ddfda48cde188"
+  },
+  "name": "gilang",
+  "password": "aku123",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a76d84b135a93c674be456"
+  },
+  "name": "aaa",
+  "email": "aaa2@mail.com",
+  "password": "aa",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a76de7a924b94bdb29c2cf"
+  },
+  "name": "aaa",
+  "email": "aaa2@mail.com",
+  "password": "aa",
+  "phone": "123456",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a76dfba924b94bdb29c2d1"
+  },
+  "name": "asdas",
+  "email": "a@d.d",
+  "password": "ddddd",
+  "phone": "12",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a7732c29cbdb9fade4f3dd"
+  },
+  "name": "wahyu",
+  "email": "wahyyu@gmail.com",
+  "password": "wahyu123",
+  "phone": "085774346",
+  "role": "anak",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a774fa7091b0c59a7a2c47"
+  },
+  "name": "agus",
+  "email": "agus@gmail.com",
+  "password": "123",
+  "phone": "0847652",
+  "role": "anak",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a776087091b0c59a7a2c49"
+  },
+  "name": "wa",
+  "email": "aw@g.s",
+  "password": "12345678",
+  "phone": "083665362",
+  "role": "orangtua",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a776807091b0c59a7a2c4b"
+  },
+  "name": "awa",
+  "email": "wa@m.m",
+  "password": "1234",
+  "phone": "08676767676",
+  "role": "orangtua",
+  "__v": 0
+}]

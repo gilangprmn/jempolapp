@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Anak</title>
+    <link rel="stylesheet" href="styl task.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <button class="backButton" onclick="toggleSidebar()">
+                <i class="arrowleft">&#9664;</i>
+            </button>
+            <div class="sidebarItemsContainer">
+                <a href="/dasboard" class="sidebarLink">
+                    <div class="sidebarItem">
+                        <i class="feather home">&#8962;</i>
+                        <span class="sidebarText">Dashboard</span>
+                    </div>
+                </a>
+                <a href="/task" class="sidebarLink">
+                    <div class="sidebarItem activeSidebarItem">
+                        <i class="foundation checkbox">&#9745;</i>
+                        <span class="sidebarText">Task</span>
+                    </div>
+                </a>
+                <a href="/rewards" class="sidebarLink">
+                    <div class="sidebarItem">
+                        <i class="evilicons trophy">&#127942;</i>
+                        <span class="sidebarText">Rewards</span>
+                    </div>
+                </a>
+                <a href="/profile" class="sidebarLink">
+                    <div class="sidebarItem">
+                        <i class="feather user">&#128100;</i>
+                        <span class="sidebarText">Profile</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <button onclick="toggleSidebar()">
+                    <i class="ionicons menu">&#9776;</i>
+                </button>
+                <div class="userInfo">
+                    <span class="userName">Nama User</span>
+                    <span class="userRole">Orang Tua</span>
+                </div>
+                <div class="profileIcon"></div>
+            </div>
+            <div class="resetInfoContainer">
+                <i class="ionicons information-circle-outline">&#8505;</i>
+                <span class="resetInfo">Task akan reset setiap hari</span>
+            </div>
+            <div class="taskSection">
+                <span class="sectionTitle">TASK ANAK</span>
+                <div class="taskCard">
+                    <div>
+                        <span class="taskTitle">Judul Task</span>
+                        <span class="taskSubtitle">Kategori Task?</span>
+                    </div>
+                    <div class="iconContainer">
+                        <button>
+                            <i class="material-icons edit">&#9998;</i>
+                        </button>
+                        <button>
+                            <i class="material-icons delete">&#10060;</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="taskSection">
+                <span class="sectionTitle">TASK PENGASUH</span>
+                <div class="taskCard">
+                    <div>
+                        <span class="taskTitle">Judul Task</span>
+                        <span class="taskSubtitle">Kategori Task?</span>
+                    </div>
+                    <div class="iconContainer">
+                        <button>
+                            <i class="material-icons edit">&#9998;</i>
+                        </button>
+                        <button>
+                            <i class="material-icons delete">&#10060;</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="addButton" onclick="addTask()">
+            <i class="material-icons add">&#10133;</i>
+        </button>
+    </div>
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleSidebar = () => {
+            sidebar.classList.toggle('active');
+        };
+
+        const addTask = () => {
+            sidebar.classList.toggle('active');
+        };
+    </script>
+</body>
+</html>

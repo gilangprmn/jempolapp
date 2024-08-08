@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styl dasboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <button class="backButton" onclick="toggleSidebar()">
+                <i class="arrowleft"></i>
+            </button>
+            <a href="/dashboard">
+                <div class="sidebarItem activeSidebarItem">
+                    <i class="feather home"></i>
+                    <span class="sidebarText">Dashboard</span>
+                </div>
+            </a>
+            <a href="/task">
+                <div class="sidebarItem">
+                    <i class="foundation checkbox"></i>
+                    <span class="sidebarText">Task</span>
+                </div>
+            </a>
+            <a href="/rewards">
+                <div class="sidebarItem">
+                    <i class="evilicons trophy"></i>
+                    <span class="sidebarText">Rewards</span>
+                </div>
+            </a>
+            <a href="/profile">
+                <div class="sidebarItem">
+                    <i class="feather user"></i>
+                    <span class="sidebarText">Profile</span>
+                </div>
+            </a>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <button onclick="toggleSidebar()">
+                    <i class="feather menu"></i>
+                </button>
+                <div class="userInfo">
+                    <span class="userName">Nama User</span>
+                    <span class="userRole">Orang Tua</span>
+                </div>
+                <div class="profileIcon"></div>
+            </div>
+            <h1 class="dashboardTitle">DASHBOARD</h1>
+            <div class="taskSection">
+                <div class="sectionHeader">
+                    <span class="sectionTitle">Task Anak</span>
+                    <img src="plus.png" alt="">
+                    <button class="addButton">
+                        <i class="antdesign pluscircleo"></i>
+                    </button>
+                </div>
+                <div class="taskItem">
+                    <span class="taskTitle">List item</span>
+                    <span class="taskDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, cumque!</span>
+                </div>
+                <div class="taskItem">
+                    <span class="taskTitle">List item</span>
+                    <span class="taskDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, cumque!</span>
+                </div>
+                <div class="taskItem">
+                    <span class="taskTitle">List item</span>
+                    <span class="taskDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, cumque!</span>
+                </div>
+            </div>
+            <div class="taskSection">
+                <div class="sectionHeader">
+                    <span class="sectionTitle">Task Pengasuh</span>
+                    <button class="addButton">
+                        <i class="antdesign pluscircleo"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleSidebar = () => {
+            if (sidebar.style.transform === 'translateX(0px)') {
+                sidebar.style.transform = 'translateX(-100%)';
+            } else {
+                sidebar.style.transform = 'translateX(0px)';
+            }
+        };
+    </script>
+</body>
+</html>
